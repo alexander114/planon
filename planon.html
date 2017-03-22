@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style> 
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+#grad1 {
+    
+    height: 200px;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(maroon, red); /* Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(maroon, red); /* Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(maroon, red); /* Firefox 3.6 to 15 */
+    background: linear-gradient(maroon, red); /* Standard syntax (must be last) */
+}
+header {color:black;}
+footer {background: #aaa;color:white;}
+.nav {background:#eee;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+.center {
+    position: absolute;
+    left: 0;
+    top: 2%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+.center2 {
+    position: absolute;
+    left: 0;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+.topleft {
+    position: absolute;
+    top: 8px;
+    left: 29px;
+    font-size: 18px;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+<header>
+	<div id="grad1" >
+    <div class="center"> <p><img src="https://mail.google.com/mail/u/0/?ui=2&ik=df3a3d5932&view=fimg&th=15a9f979d1ac6441&attid=0.1&disp=emb&realattid=d91c00cc6a875b87_0.1.2&attbid=ANGjdJ8HJxTdYXkKY3BoM7Vr32bS9-bfCwYLR1KVsM1zo7iHoE6dFdT9EkT7lkuJbSqOkw3UUdtTMCTclgbd8JbMgxJJFYgCO1JzlvhcyT3J2QvHJ8te--nddpoDGqM&sz=w946-h1016&ats=1489064383243&rm=15a9f979d1ac6441&zw&atsh=1" alt="Planon Logo" style="height:170px;width:150px"></p></div>
+   </div>
+</header>
+<article class="article">
+  <p><img src="https://mail.google.com/mail/u/0/?ui=2&ik=df3a3d5932&view=fimg&th=15a9f979d1ac6441&attid=0.2&disp=emb&realattid=d91c00cc6a875b87_0.1.3&attbid=ANGjdJ8judph-j--IOMHtOf80o12lB5cArwVOQApZK9-NTidbWmJubpHPEduSByPdxlFngBXVSG95uaf4cbGt4_kneWKGRnEZ8CObHealuAbooEtiPIlWjIxcnwIS6s&sz=w1508-h850&ats=1489064383243&rm=15a9f979d1ac6441&zw&atsh=1" alt="Planon Under construction" style="height:auto;width:100%"></p>
+  
+</article>
+
+<footer>Copyright &copy; Planon Solutions</footer>
+</div>
+
+</body>
+</html>
